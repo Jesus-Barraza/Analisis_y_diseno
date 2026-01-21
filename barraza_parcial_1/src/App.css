@@ -13,6 +13,12 @@
   }
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  .Imagen:hover {
+    animation: Image-scale infinite 1s ease;
+  }
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +41,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes Image-scale {
+  from {
+    transform: scale(1);
+  } 
+  to {
+    transform: scale(1.2);
+  } 
 }

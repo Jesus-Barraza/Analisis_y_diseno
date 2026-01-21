@@ -1,21 +1,22 @@
 import logo from './logo.svg';
+import imgJesus from './img_jesus.png';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={imgJesus} width="200" height="150" className="App-logo" alt="imagen" />
         <p>
           Hola soy Jesús Daniel Barraza Torres, Este es mi hola mundo de react
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="http://www.utd.edu.mx"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Ingresa a la UTD
         </a>
       </header>
     </div>
@@ -23,3 +24,4 @@ function App() {
 }
 
 export default App;
+//<img src={logo} width="50" height="50" className="App-logo" alt="logo" />
