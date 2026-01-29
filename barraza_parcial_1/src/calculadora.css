@@ -1,0 +1,119 @@
+/* Centrado general y fondo */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+/* Tarjeta principal de la calculadora */
+.calculadora-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px; /* Ancho máximo para PC, flexible en móvil */
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Estilos de los inputs */
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #4a90e2;
+}
+
+/* Grilla para los botones */
+.botones-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* Estilos de los botones */
+.btn {
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.1s, background 0.3s;
+  font-weight: bold;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn.op {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.btn.op:hover {
+  background-color: #357abd;
+}
+
+.btn.clear {
+  width: 100%;
+  background-color: #ff6b6b;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.btn.clear:hover {
+  background-color: #fa5252;
+}
+
+/* Caja de resultado */
+.resultado-box {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 5px solid #4a90e2;
+}
+
+.resultado-box h3 {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.resultado-box p {
+  margin: 5px 0 0;
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+  word-wrap: break-word; /* Evita que números largos rompan el diseño */
+}
+
+/* RESPONSIVIDAD (Para pantallas muy pequeñas) */
+@media (max-width: 350px) {
+  .botones-grid {
+    grid-template-columns: repeat(2, 1fr); /* Cambia a 2 columnas en móviles pequeños */
+  }
+}
