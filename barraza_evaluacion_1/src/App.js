@@ -28,6 +28,14 @@ function App() {
         >
           Documentación parcial 1
         </a>
+        <a
+          className="App-link"
+          href="/components/P2/info.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Documentación parcial 2
+        </a>
       </header>
     </div>
   );

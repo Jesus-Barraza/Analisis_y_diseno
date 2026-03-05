@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ejemplo Pop-up</title>
+        <link rel="stylesheet" href="./info.css">
+    </head>
+    <body>
+        <article>
+            <h1>Metodologías de desarrollo de SW</h1>
+            <h2>¿Qué es una metodología de desarrollo de software?</h2>
+            <p>Las metodologías de desarrollo de software son un conjunto de técnicas y métodos organizativos que se aplican para diseñar soluciones de software informático. El objetivo de las distintas metodologías es el de intentar organizar los equipos de trabajo para que estos desarrollen las funciones de un programa de la mejor manera posible</p>
+        </article>
+        <article>
+            <h1>Tipo de metodologías</h1>
+            <div class="contbtn">
+                <button class="btn btn1" onclick="cuadro1()">Cascada</button>
+                <button class="btn btn2" onclick="cuadro2()">Modelo V</button>
+                <button class="btn btn3" onclick="cuadro3()">Ágiles</button>
+                <button class="btn btn4" onclick="cuadro4()">Scrum</button>
+                <button class="btn btn5" onclick="cuadro5()">Kanban</button>
+                <button class="btn btn6" onclick="cuadro6()">XP</button>
+                <button class="btn btn7" onclick="cuadro7()">Híbridas</button>
+            </div>
+        </article>
+        <article>
+            <h1>Link al tablero de Jira</h1>
+            <div class="contbtn">
+                <button class="btn btnextra" onclick="location.href='https://utd-team-w6bfuebp.atlassian.net/jira/software/projects/TEC/boards/2?atlOrigin=eyJpIjoiZDdhYWUxNTE4ZmNhNDcyOWE0ZWZiZTBmODUwNzI0MDAiLCJwIjoiaiJ9'">---- Jira ----</button>
+            </div>
+        </article>
+        <article>
+            <div class="contbtn">
+                <button class="btn btnextra" onclick="location.href='../../../src/App.js'">---- Regresar al menú principal ----</button>
+            </div>
+            <h2>"Todo es imposible hasta que se intenta"</h2>
+            <p>Barraza Torres Jesús Daniel</p>
+        </article>
+
+        <!-- Overlay + Pop-up -->
+        <div class="overlay" id="overlay">
+            <div class="popup">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2 id="title-popup"></h2>
+            <p id="subtitle-popup", class="subtitle"><strong></strong></p>
+            <p id="text1-popup"></p>
+            <p id="text2-popup"></p>
+            </div>
+        </div>
+        <script src="./info.js"></script>
+    </body>
+</html>
