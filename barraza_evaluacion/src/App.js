@@ -22,7 +22,7 @@ function App() {
         </a>
         <a
           className="App-link"
-          href="/components/download.html"
+          href="/components/P1/download.html"
           target="_blank"
           rel="noopener noreferrer"
         >
